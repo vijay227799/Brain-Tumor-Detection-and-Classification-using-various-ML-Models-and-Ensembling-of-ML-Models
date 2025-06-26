@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+ <!--=== Coding by CodingLab | www.codinglabweb.com === -->
+  <html lang="en"> <head> <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="style.css">
+   
+  <!----===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  
+  <title>Regisration Form </title>
+</head> 
+
+<body> 
+   <div class="container"> 
+    <header>Registration</header>
+   <form action="patient.php" method="post">
+  <div class="form first">
+      <div class="details personal">
+          <span class="title">Personal Details</span>
+
+          <div class="fields">
+              <div class="input-field">
+                  <label>Full Name</label>
+                  <input type="text" name="full_name" placeholder="Enter your name" required>
+              </div>
+
+              <div class="input-field">
+                  <label>Date of Birth</label>
+                  <input type="date" name="date_of_birth" placeholder="Enter birth date" required>
+              </div>
+
+              <div class="input-field">
+                  <label>Email</label>
+                  <input type="text" name="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-field">
+                  <label>Mobile Number</label>
+                  <input type="number" name="mobile_number" placeholder="Enter mobile number" required>
+              </div>
+
+              <div class="input-field">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+
+              <div class="input-field">
+                  <label>Gender</label>
+                  <select name="gender" required>
+                      <option disabled selected>Select gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
+                  </select>
+              </div>
+              
+              <div class="input-field">
+                  <label>Blood Group</label>
+                  <select name="blood_group" required>
+                      <option disabled selected>Select Blood Group</option>
+                      <option>A+ve</option>
+                      <option>B+ve</option>
+                      <option>O+ve</option>
+                      <option>A-ve</option>
+                      <option>B-ve</option>
+                      <option>O-ve</option>
+                      <option>AB+ve</option>
+                      <option>AB-ve</option>
+                      
+                  </select>
+              </div>
+              <div class="input-field">
+                  <label>Occupation</label>
+                  <input type="text" name="occupation" placeholder="Enter your occupation" required>
+              </div>
+
+            <button class="nextBtn"><span class="btnText">Register</span><i class="uil uil-navigator"></i></button>
+
+
+          </div> 
+      </div>
+
+  </form>
+  </div>
+</body>
+  </html>
